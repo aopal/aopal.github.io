@@ -22,7 +22,7 @@
   width: device-width;
 }
 /* ============================================================
-  RESET 
+  RESET
 ============================================================ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -274,7 +274,7 @@ strong {
 }
 
 .backimg {
-  no-repeat center center fixed; 
+  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -303,7 +303,7 @@ strong {
   height: 100vh;
   width: 100%;
   background-color: #1F2535;
-  background: url(../img/istra1920.jpg) no-repeat center center fixed;
+  background: url(../images/code-wallpaper.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -353,7 +353,7 @@ h1#title-1 {
 }
 
 #title-1 em {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Roboto';
   font-size: 100px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -542,13 +542,8 @@ a.scroll::after {
   border-color: transparent;
 }
 
-.social-btn-box .facebook-btn:hover {
-  background: #3B5998;
-  color: #fff;
-}
-
-.social-btn-box .twitter-btn:hover {
-  background: #55ACEE;
+.social-btn-box .github-btn:hover {
+  background: rgb(66,176,255);
   color: #fff;
 }
 
@@ -557,20 +552,15 @@ a.scroll::after {
   color: #fff;
 }
 
-.social-btn-box .google-plus-btn:hover {
+.social-btn-box .mail-btn:hover {
   background: #db514f;
   color: #fff;
 }
 
-.social-btn-box .youtube-btn:hover {
-  background: #cc181e;
+/*.social-btn-box .github-btn:hover {
+  background: rgb(66,176,255);
   color: #fff;
-}
-
-.social-btn-box .github-btn:hover {
-  background: #2b2e30;
-  color: #fff;
-}
+}*/
 
 .social-btn-box .a:hover {
   background: #3498db;
@@ -1058,7 +1048,7 @@ article img {
   left: 0;
 }
 
-/* blockquote */		
+/* blockquote */
 .absomid-cbp {
   height: 300px;
   width: 680px;
@@ -1523,7 +1513,7 @@ ul.blogsocico li a {
   background-image: url(../img/social-sprite-min.png);
 }
 
-ul.blogsocico li.facebook a {
+ul.blogsocico li.github a {
   background-position: 0 0;
 }
 
@@ -1535,7 +1525,7 @@ ul.blogsocico li.twitter a {
   background-position: -256px 0;
 }
 
-ul.blogsocico li.facebook a:hover, #sidebar ul.blogsocico li.facebook a:hover {
+ul.blogsocico li.github a:hover, #sidebar ul.blogsocico li.github a:hover {
   background-position: 0 -32px;
 }
 
@@ -1640,7 +1630,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 }
 
 @media all and (min-width: 1600px) {
-	
+
   h1#title-1 {
     font-size: 20px;
     line-height: 48px;
@@ -1672,7 +1662,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 }
 
 @media all and (min-width: 960px) and (max-width: 1600px) {
-	
+
   .wrap {
     width: 4em;
     height: 4em;
@@ -1716,7 +1706,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 }
 
 @media all and (min-width: 960px) and (max-width: 1280px) {
-	
+
   #title-sub1 {
     font-size: 24px;
   }
@@ -1814,9 +1804,9 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 }
 
 @media all and (max-width: 768px) {
-	
+
   .hero {
-    background-image: url(../img/istria768.jpg);
+    background-image: url(../images/code-wallpaper.jpg);
   }
 
   .absomid {
@@ -1845,7 +1835,7 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
 }
 
 @media all and (max-width: 600px) {
-	
+
   .social-btn-container {
     width: 320px;
     bottom: 30%;
