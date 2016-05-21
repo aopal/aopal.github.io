@@ -4,7 +4,7 @@ function EasyPeasyParallax() {
 	$('#section-1').css({
 		'background-position' : '50% ' + (-scrollPos/4)+"px"
 	});
-	$('#title-1').css({		
+	$('#title-1').css({
 		'opacity': 1-(scrollPos/450)
 	});
 }
@@ -15,7 +15,9 @@ $(document).ready(function(){
 });
 // STICKY NAV
 $(window).scroll(function() {
-
+		var file = document.location.href;
+		if(file.indexOf('index.html') == -1)
+			return;
     if ($(window).scrollTop() > 100) {
         $('.main_h').addClass('sticky');
     } else {
@@ -128,4 +130,3 @@ wow.init();
     });
 
   });
-
