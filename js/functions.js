@@ -16,9 +16,10 @@ $(document).ready(function(){
 // STICKY NAV
 $(window).scroll(function() {
 		var file = document.location.href;
-		if(file.indexOf('index.html') == -1)
+		console.log(file);
+		if(file.indexOf('index.html') == -1 && file.indexOf('.html') != -1)
 			return;
-    if ($(window).scrollTop() > 100) {
+    else if ($(window).scrollTop() > 100) {
         $('.main_h').addClass('sticky');
     } else {
         $('.main_h').removeClass('sticky');
