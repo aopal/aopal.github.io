@@ -1,4 +1,4 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/pixelthing/pen/zGZKaQ.
+A Pen created at CodePen.io. You can find this one at https://codepen.io/pixelthing/pen/zGZKaQ.
 
  A widget to allow smooth transition between poster frame, youtube video and back.
 
