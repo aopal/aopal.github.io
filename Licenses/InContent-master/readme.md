@@ -17,7 +17,7 @@ For <b>LESS</b> compiled:
 
 <p>The <code>.bottom-to-top</code> is the class of effect that your choice.</p>
 
-<h2>See demo <a href="http://bit.ly/inContent" title="See demo">here.</h2>
+<h2>See demo <a href="https://bit.ly/inContent" title="See demo">here.</h2>
 
 <p>Here is the list of classes and effect that you can use:	</p>
 <table>
@@ -88,8 +88,8 @@ InContent is released under MIT License.
 	If you dont have, what do you waiting?! =D					
 </p>
 <p>
-	Take a look, its Free - QR Reader: <a href="http://bit.ly/18rWt4U">iPhone</a>, <a 	href="http://bit.ly/18LEhkB">Android</a> and <a href="http://bit.ly/1bFhgzY">Windows Phone</a>.
+	Take a look, its Free - QR Reader: <a href="https://bit.ly/18rWt4U">iPhone</a>, <a 	href="https://bit.ly/18LEhkB">Android</a> and <a href="https://bit.ly/1bFhgzY">Windows Phone</a>.
 </p>
-<img src="http://i.imgur.com/fq2Aza6.png" alt="InContent - QRcode" />
+<img src="https://i.imgur.com/fq2Aza6.png" alt="InContent - QRcode" />
 
-<a href="http://bit.ly/BrunoTw" >Say hello</a>
+<a href="https://bit.ly/BrunoTw" >Say hello</a>
