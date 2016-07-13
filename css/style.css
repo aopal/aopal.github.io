@@ -1893,14 +1893,3 @@ ul.blogsocico li.youtube a:hover, #sidebar ul.blogsocico li.youtube a:hover {
     width: 320px;
   }
 }
-
-.logo {
-  /*border: 1px solid red;*/
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  width: auto;
-  height: auto;
-  max-width: 4em;
-  max-height: 4em;
-}
