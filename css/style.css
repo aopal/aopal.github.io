@@ -365,6 +365,16 @@ h1#title-1 {
   perspective: 1000;
 }
 
+.force-height {
+  max-height: 700px;
+  min-height: 700px;
+}
+
+/*.tech-icon {
+  font-size: 30!important;
+  min-width: 1em!important;
+}*/
+
 #title-1 em::before,
 #title-1 em::after {
   /*content: "§";*/
