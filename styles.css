@@ -55,7 +55,7 @@
   content: "\62";
 }
 .icon-ubuntu:hover {
-  color: orange;
+  color: rgb(221,72,20);
 }
 .icon-stack-overflow:before {
   content: "\63";
@@ -79,13 +79,13 @@
   content: "\68";
 }
 .icon-github:hover {
-  color: blue;
+  color: rgb(66,176,255);
 }
 .icon-nodejs:before {
   content: "\69";
 }
 .icon-nodejs:hover {
-  color: green;
+  color: rgb(102,159,100);
 }
 .icon-csharp:before {
   content: "\6a";
@@ -100,7 +100,7 @@
   content: "\6c";
 }
 .icon-html:hover {
-  color: orange;
+  color: rgb(228, 77, 38);
 }
 .icon-javascript-light:before {
   content: "\6d";
@@ -121,7 +121,7 @@
   content: "\70";
 }
 .icon-coffeescript:hover {
-  color: brown;
+  color: rgb(40,51,76);
 }
 .icon-html5:before {
   content: "\71";
@@ -133,7 +133,7 @@
   content: "\72";
 }
 .icon-css3:hover {
-  color: blue;
+  color: rgb(70,130,156);
 }
 .icon-python:before {
   content: "\73";
@@ -145,13 +145,13 @@
   content: "\74";
 }
 .icon-angularjs:hover {
-  color: red;
+  color: rgb(221,27,22);
 }
 .icon-less:before {
   content: "\75";
 }
 .icon-less:hover {
-  color: lightblue;
+  color: rgb(30,65,111);
 }
 .icon-typescript:before {
   content: "\76";
@@ -163,7 +163,7 @@
   content: "\77";
 }
 .icon-typescript-light:hover {
-  color: lightblue;
+  color: rgb(0,121,203);
 }
 .icon-git-fork:before {
   content: "\78";
