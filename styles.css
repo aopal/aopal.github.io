@@ -45,6 +45,20 @@
   min-width: 35px;
 }
 
+.tech-used {
+    position: absolute;;
+    bottom: 10px;
+}
+
+.experience-box {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.move-up {
+    margin-top: -50px;
+}
+
 .icon-lua:before {
   content: "\61";
 }
