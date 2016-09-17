@@ -47,12 +47,12 @@
 
 .tech-used {
     position: absolute;;
-    bottom: 10px;
+    bottom: 20px;
 }
 
 .experience-box {
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 525px;
+    max-height: 525px;
 }
 
 .move-up {
