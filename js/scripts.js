@@ -23,11 +23,13 @@
 
         e.preventDefault();
         var heading = $(this).attr('href');
-        var scrollDistance = $(heading).offset().top;
+        var scrollDistance = $(heading).offset().top + 1;
+        if($(window).width() > 768) // cutoff for navbar/hamburger menu switch
+          scrollDistance -= $('header').height();
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 2);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -45,6 +47,9 @@
     // Scroll to first element
     $('#lead-down span').click(function() {
         var scrollDistance = $('#lead').next().offset().top;
+        if($(window).width() > 768) // cutoff for navbar/hamburger menu switch
+          scrollDistance -= $('header').height();
+          
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
         }, 500);
