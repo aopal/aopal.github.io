@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra-index'
 
 set :public_folder, '.'
 
-get "/" do
-  redirect '/index.html'
+get '/' do
+  send_file 'index.html'
 end
