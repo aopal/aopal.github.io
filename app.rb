@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'sinatra-index'
 
 set :public_folder, '.'
 
