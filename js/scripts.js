@@ -90,6 +90,10 @@
     $('#mobile-menu-close').click(function() {
         $('header, body').removeClass('active');
     });
+    
+    $('#menu').click(function() {
+        $('header, body').removeClass('active');
+    });
 
     // Load additional projects
     $('#view-more-projects').click(function(e){
