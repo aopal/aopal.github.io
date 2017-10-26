@@ -346,7 +346,7 @@ footer {
   padding: 15px;
   overflow: hidden;
   top: -10%;
-  
+
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,17 +380,17 @@ footer {
     font-size: 2.25em;
     margin-bottom: 15px;
   }
-  
+
   .social {
     position: absolute;
     width: 100%;
     text-align: center;
-    
+
     a {
       color: $border;
-      
+
       &:hover {
-        color: $base-color;
+        color: lighten($base-color, 20%);
         text-decoration: none;
       }
     }
@@ -744,6 +744,11 @@ footer {
     ----- 10. Contact Styles -----
     -------------------------------
 */
+
+#hobbies {
+  text-align: center;
+  padding: 50px 15px;
+}
 
 #contact {
   padding: 50px 15px;
