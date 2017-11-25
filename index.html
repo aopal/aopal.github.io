@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -60,9 +62,14 @@
       <li>
         <a href="#hobbies">Hobbies</a>
       </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   </header>
   <!-- End header -->
+
+  <div id="alert-container" align="center"></div>
 
   <div id="lead">
     <div id="lead-content">
@@ -335,7 +342,7 @@
           </div>
           <!-- End .project-image -->
           <div class="project-info">
-            <h3>Creative Writing</h3>
+            <h3>Writing</h3>
             <p>
               I write various short stories and poems on my own, as well as being a member of the University of Waterloo Creative Writing Club.
             </p>
@@ -362,14 +369,13 @@
     </div>
   </div>
 
-  <div id="contact" hidden>
-    <h2>Get in Touch</h2>
+  <div id="contact" class="background-alt">
+    <h2 class="heading" >Get in Touch</h2>
     <div id="contact-form">
-      <form method="POST" action="https://formspree.io/email@email.com">
-        <input type="hidden" name="_subject" value="Contact request from personal website" />
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
+      <form>
+        <input id="email" type="email" placeholder="Your email">
+        <textarea id="message" placeholder="Your message"></textarea>
+        <button type="button" id="send-message">Send</button>
       </form>
     </div>
     <!-- End #contact-form -->

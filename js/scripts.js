@@ -29,7 +29,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 2);
+        }, 500);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -49,7 +49,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         if($(window).width() > 768) // cutoff for navbar/hamburger menu switch
           scrollDistance -= $('header').height();
-          
+
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
         }, 500);
@@ -90,7 +90,7 @@
     $('#mobile-menu-close').click(function() {
         $('header, body').removeClass('active');
     });
-    
+
     $('#menu').click(function() {
         $('header, body').removeClass('active');
     });
@@ -103,4 +103,39 @@
         });
     });
 
+    $('#send-message').click(function(){
+      var email = $('#email').val();
+      var msg = $('#message').val();
+
+      if(!validateEmail(email)) {
+        showNotice('warning', 'Please enter a valid email address');
+        return;
+      }
+
+      if(!msg.trim()){
+        showNotice('warning', 'Please enter a message');
+        return;
+      }
+
+      $.post('/contact', {email: email, message: msg}, function(data, status) {
+        showNotice('success', 'Thanks for the message! I\'ll get back to you as soon as I can');
+      })
+      .fail(function(response) {
+        showNotice('danger', 'Something went wrong! Try again or just send me an email at anuj@aopal.ca');
+      });
+    });
+
 })(jQuery);
+
+function validateEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+function showNotice(status, message) {
+  elem = $('<div class="fade alert alert-' + status + '" role="alert">' + message + '</div>');
+  $('#alert-container').append(elem);
+  elem.fadeTo(4000, 1).fadeTo(500, 0).slideUp(300, function(){
+    $(this).remove();
+  });
+}
