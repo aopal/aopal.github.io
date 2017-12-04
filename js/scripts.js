@@ -104,8 +104,14 @@
     });
 
     $('#send-message').click(function(){
+      var name = $('#name').val();
       var email = $('#email').val();
       var msg = $('#message').val();
+
+      if(!name.trim()){
+        showNotice('warning', 'Please enter your name');
+        return;
+      }
 
       if(!validateEmail(email)) {
         showNotice('warning', 'Please enter a valid email address');
@@ -116,12 +122,20 @@
         showNotice('warning', 'Please enter a message');
         return;
       }
-
-      $.post('/contact', {email: email, message: msg}, function(data, status) {
-        showNotice('success', 'Thanks for the message! I\'ll get back to you as soon as I can');
-      })
-      .fail(function(response) {
-        showNotice('danger', 'Something went wrong! Try again or just send me an email at anuj@aopal.ca');
+      $.ajax({
+        url: 'https://formspree.io/anuj@aopal.ca',
+        method: 'POST',
+        data: {message: msg, _replyto: email, email: email, _subject: 'Contact request from aopal.ca'},
+        dataType: 'json',
+        beforeSend: function() {
+          showNotice('info', 'Sending message...');
+        },
+        success: function(data) {
+          showNotice('success', 'Thanks for the message! I\'ll get back to you as soon as I can');
+        },
+        error: function(err) {
+          showNotice('danger', 'Something went wrong! Try again or just send me an email at anuj@aopal.ca');
+        }
       });
     });
 
