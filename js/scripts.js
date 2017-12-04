@@ -122,14 +122,12 @@
         showNotice('warning', 'Please enter a message');
         return;
       }
+      subject = 'Contact request from ' + name.val();
       $.ajax({
         url: 'https://formspree.io/anuj@aopal.ca',
         method: 'POST',
-        data: {message: msg.val(), _replyto: email.val(), email: email.val(), _subject: 'Contact request from aopal.ca'},
+        data: {name: name.val(), message: msg.val(), _replyto: email.val(), email: email.val(), _subject: subject},
         dataType: 'json',
-        beforeSend: function() {
-          showNotice('info', 'Sending message...');
-        },
         success: function(data) {
           showNotice('success', 'Thanks for the message! I\'ll get back to you as soon as I can');
           msg.val("");
