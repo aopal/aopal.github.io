@@ -1,5 +1,5 @@
 # aopal.ca
 
-My personal portfolio site. Currently hosted on Heroku with a simple Ruby/Sinatra backend. If it's slow to connect it's cause Heroku has to start the server again.
+My personal portfolio site. Using Github Pages for now since hosting is overkill for a static site.
 
 [aopal.ca](http://www.aopal.ca)
