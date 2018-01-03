@@ -608,7 +608,6 @@ footer {
   padding: 50px 15px 20px;
   border-bottom: 1px solid $border;
   text-align: center;
-
   h2 {
     color: $heading;
     margin-bottom: 50px;
@@ -621,6 +620,7 @@ footer {
   padding: 15px;
   border: 1px solid $border;
   text-align: left;
+  background: $background;
 
   h3 {
     font-weight: 500;
@@ -675,6 +675,7 @@ footer {
   margin: 0 auto 30px;
   overflow: hidden;
   background: $background;
+  border: 1px solid $border;
   border-radius: 4px;
 }
 
@@ -753,14 +754,79 @@ footer {
   }
 }
 /*
-    -------------------------------
-    ----- 10. Contact Styles -----
-    -------------------------------
+    -------------------------------------
+    ----- 10. Contact Styles & misc -----
+    -------------------------------------
 */
 
 #hobbies {
   text-align: center;
   padding: 50px 15px;
+}
+
+#reviews {
+  padding: 50px 15px 20px;
+  border-bottom: 1px solid $border;
+  text-align: center;
+
+  h2 {
+    color: $heading;
+    margin-bottom: 50px;
+  }
+
+  a {
+    font-size: 22px;
+  }
+}
+
+.review-block {
+  margin: auto;
+  margin-bottom: 3vw;
+  padding: 5px 10px;
+  color: $heading;
+  background: $background;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+
+  p {
+    // font-family: Helvetica;
+    font-style: italic;
+  }
+}
+
+.review-bloc {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 15px;
+  border: 1px solid $border;
+  text-align: left;
+  background: $background;
+  h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: $heading;
+  }
+  span {
+    color: $text;
+    float: right;
+  }
+  h4 {
+    color: $text;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px;
+  }
+  p,
+  ul {
+    margin: 0;
+    color: $text;
+    font-size: 0.9em;
+  }
+  ul {
+    padding: 0 0 0 15px;
+  }
 }
 
 #contact {

@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110147087-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-110147087-1');
@@ -51,16 +54,19 @@
         <a href="#experience">Experience</a>
       </li>
       <li>
-        <a href="#education">Education</a>
+        <a href="#reviews">Recommendations</a>
       </li>
       <li>
         <a href="#projects">Projects</a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
       </li>
       <li>
         <a href="#hobbies">Hobbies</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
       </li>
       <li>
         <a href="#contact">Contact</a>
@@ -75,7 +81,7 @@
     <div id="lead-content">
       <h1>Anuj Opal</h1>
       <h2>Software Developer</h2>
-      <a download href="http://aopal.github.io/resume/index.pdf" class="btn-rounded-white">Download Resume</a>
+      <a download href="http://aopal.github.io/resume/anuj_opal_resume.pdf" class="btn-rounded-white">Download Resume</a>
       <div class="col-sm-5 social">
         <ul>
           <li>
@@ -111,7 +117,9 @@
         </div>
         <div class="col-md-8">
           <p>
-            I'm a part-time artist, full-time programmer and over-time nerd. I've worked for companies of various sizes in the past, from start-ups to brand leaders. My areas of expertise are mostly in the web sphere, both front and back end, though also I'm interested in data science and machine learning.
+            I'm a part-time artist, full-time programmer and over-time nerd. I've worked for companies of various sizes in the past,
+            from start-ups to brand leaders. My areas of expertise are mostly in the web sphere, both front and back end,
+            though also I'm interested in data science and machine learning.
           </p>
         </div>
       </div>
@@ -122,34 +130,37 @@
   <div id="experience" class="background-alt">
     <h2 class="heading">Experience</h2>
     <div id="experience-timeline">
-      <div data-date="September 2017 – December 2017">
+      <div data-date="September 2017 – December 2017" class="shadow">
         <img src="images/vidyard.png" class="logo" />
         <h3>Vidyard</h3>
         <h4>Software Developer</h4>
         <p>
-          Full-stack work on OS X using React, node.js, Handlebars.js, Express.js, Ruby, Rails and Sinatra. Helped rebrand the Vidyard GoVideo chrome extension. Data aggregation and pipelining using the Facebook Graph API and the Youtube Analytics API. Set up new microservices on AWS using a variety of services. Manual implementation of the OAuth 2.0 protocol.
+          Full-stack work on OS X using React, node.js, Handlebars.js, Express.js, Ruby, Rails and Sinatra. Helped rebrand the Vidyard GoVideo chrome extension. Data aggregation and pipelining using the Facebook Graph API and the Youtube Analytics API. Set up new microservices on AWS using a variety of services.
         </p>
       </div>
 
-      <div data-date="January 2017 – April 2017">
+      <div data-date="January 2017 – April 2017" class="shadow">
         <img src="images/flipp.png" class="logo" />
         <h3>Flipp</h3>
         <h4>Junior Software Engineer</h4>
         <p>
-          Back-end work using Ruby and Rails on OS X. Wrote Selenium based web scrapers running on AWS EC2 and Elastic Beanstalk instances. Designed solution to long-standing issue surrounding database locks. Integrated the system with Parsehub as an internal hackathon project and demoed said project to several project managers and team leads.
+          Back-end work using Ruby and Rails on OS X. Wrote Selenium based web scrapers running on AWS EC2 and Elastic Beanstalk instances.
+          Designed solution to long-standing issue surrounding database locks. Integrated the system with Parsehub as an
+          internal hackathon project and demoed said project to several project managers and team leads.
         </p>
       </div>
 
-      <div data-date="May 2016 – August 2016">
+      <div data-date="May 2016 – August 2016" class="shadow">
         <img src="images/imagine.png" class="logo" />
         <h3>Imagine Communications</h3>
         <h4>Full-Stack Web Developer</h4>
         <p>
-          Front-end work using TypeScript and AngularJS 1.5 on Windows. Core team member for the version 1.1 release of Master Control Panel. Wrote fuctional proof-of-concepts for Electron and Aurelia.
+          Front-end work using TypeScript and AngularJS 1.5 on Windows. Core team member for the version 1.1 release of Master Control
+          Panel. Wrote fuctional proof-of-concepts for Electron and Aurelia.
         </p>
       </div>
 
-      <div data-date="July 2015 – August 2015">
+      <div data-date="July 2015 – August 2015" class="shadow">
         <img src="images/encircle.png" class="logo" />
         <h3>Encircle</h3>
         <h4>Software Developer</h4>
@@ -161,19 +172,29 @@
   </div>
   <!-- End #experience -->
 
-  <div id="education">
-    <h2 class="heading">Education</h2>
-    <div class="education-block">
-      <h3>University of Waterloo</h3>
-      <span class="education-date">Sept 2015 - Present</span>
-      <h4>Candidate for Honours Bachelor of Computer Science, Co-op, 3A</h4>
+
+  <div id="reviews" class="background">
+    <h2 class="heading">Recommendations</h2>
+    <div class="review-block project shadow">
       <p>
-        Currently on Co-op prior to my 3A term of Computer Science, with a minor in English Language and Literature. I'm involved with both the UWaterloo Creative Writing Club and mathNEWS.
+        &ldquo;Anuj is an exceptionally talented programmer who demonstrates ability far beyond what his years might suggest. His
+        passion for learning and goal oriented nature will make him a great asset in any faculty, program, or place of employment.&rdquo;
       </p>
+      &mdash; Ronuk Raval, Co-founder, Encircle
     </div>
-    <!-- End .education-block -->
+    <!-- End .review-block -->
+
+    <div class="review-block project shadow">
+      <p>
+        &ldquo;Anuj demonstrated the behaviours and abilities we normally see in an experienced developer...He crushed a ton of code,
+        often pulling off complex problems with ease! Anuj, you've been an incredible asset to Vidyard.&rdquo;
+      </p>
+      &mdash; Michael Stark, Integrations Team Lead, Vidyard
+    </div>
+    <!-- End .review-block -->
+    <a download href="https://aopal.github.io/resume/anuj_opal_reference_letter.pdf">Download letter of recommendation</a>
   </div>
-  <!-- End #education -->
+  <!-- End #reviews -->
 
   <div id="projects" class="background-alt">
     <h2 class="heading">Projects</h2>
@@ -203,7 +224,8 @@
           <div class="project-info">
             <h3>Cover Letter Generator</h3>
             <p>
-              Ruby script to autogenerate cover letters for WaterlooWorks job postings. Built with Watir, a Selenium powered Ruby gem for easy web scraping.
+              Ruby script to autogenerate cover letters for WaterlooWorks job postings. Built with Watir, a Selenium powered Ruby gem for
+              easy web scraping.
             </p>
             <a href="https://github.com/aopal/cover-letter-generator">View Project on GitHub</a>
           </div>
@@ -219,7 +241,8 @@
           <div class="project-info">
             <h3>RSA encryption tool</h3>
             <p>
-              Command line node.js tool for encrypting text files. Tested with bitlengths as high as 8192, but smaller keylengths are recommended for efficiency.
+              Command line node.js tool for encrypting text files. Tested with bitlengths as high as 8192, but smaller keylengths are recommended
+              for efficiency.
             </p>
             <a href="https://github.com/aopal/node-rsa">View Project on GitHub</a>
           </div>
@@ -247,29 +270,20 @@
   </div>
   <!-- End #projects -->
 
-  <div id="skills">
-    <h2 class="heading">Skills</h2>
-    <ul>
-      <li>JavaScript</li>
-      <li>CSS</li>
-      <li>AngularJs</li>
-      <li>React</li>
-      <li>node.js</li>
-      <li>Electron</li>
-      <li>Python</li>
-      <li>Ruby</li>
-      <li>Rails</li>
-      <li>MySQL</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>AWS</li>
-      <li>Docker</li>
-      <li>Lua</li>
-      <li>Matlab</li>
-      <li>Git</li>
-    </ul>
+  <div id="education" class="background">
+    <h2 class="heading">Education</h2>
+    <div class="education-block project shadow">
+      <h3>University of Waterloo</h3>
+      <span class="education-date">Sept 2015 - Present</span>
+      <h4>Candidate for Honours Bachelor of Computer Science, Co-op, 3A</h4>
+      <p>
+        Currently in my 3A term of Computer Science, with a minor in English Language and Literature. I'm involved with both the
+        UWaterloo Creative Writing Club and mathNEWS.
+      </p>
+    </div>
+    <!-- End .education-block -->
   </div>
-  <!-- End #skills -->
+  <!-- End #education -->
 
   <div id="hobbies" class="background-alt">
     <h2 class="heading">Hobbies</h2>
@@ -284,7 +298,8 @@
           <div class="project-info">
             <h3>Music</h3>
             <p>
-              Call me a hipster, but I play acoustic guitar, mostly a mix of folk and spanish classical. I also have group of friends that jams to musicals fairly often: Hamilton, Phantom, L&eacutes Mis, Wicked, etc.
+              Call me a hipster, but I play acoustic guitar, mostly a mix of folk and spanish classical. I also have group of friends that
+              jams to musicals fairly often: Hamilton, Phantom, L&eacutes Mis, Wicked, etc.
             </p>
           </div>
           <!-- End .project-info -->
@@ -299,7 +314,8 @@
           <div class="project-info">
             <h3>Speed Skating</h3>
             <p>
-              I've been doing short track speed skating with the Kitchener Waterloo Sertoma Sertoma Speed Skating Club for around 10 years now, and also help coach when I can.
+              I've been doing short track speed skating with the Kitchener Waterloo Sertoma Sertoma Speed Skating Club for around 10 years
+              now, and also help coach when I can.
             </p>
           </div>
           <!-- End .project-info -->
@@ -314,7 +330,8 @@
           <div class="project-info">
             <h3>mathNEWS</h3>
             <p>
-              I write for mathNEWS, a student newspaper at UW run my the Mathematics Society. My articles range from serious and informative, to the absolute ridiculousness that mathNEWS is infamous for.
+              I write for mathNEWS, a student newspaper at UW run my the Mathematics Society. My articles range from serious and informative,
+              to the absolute ridiculousness that mathNEWS is infamous for.
             </p>
           </div>
           <!-- End .project-info -->
@@ -344,7 +361,8 @@
           <div class="project-info">
             <h3>Writing</h3>
             <p>
-              I write various short stories and poems on my own, as well as being a member of the University of Waterloo Creative Writing Club.
+              I write various short stories and poems on my own, as well as being a member of the University of Waterloo Creative Writing
+              Club.
             </p>
           </div>
           <!-- End .project-info -->
@@ -359,7 +377,8 @@
           <div class="project-info">
             <h3>General nerdiness</h3>
             <p>
-              I'm a huge nerd, and absolutely proud of it. I love books, board games, video games, etc. My oldest and most time consuming hobby.
+              I'm a huge nerd, and absolutely proud of it. I love books, board games, video games, etc. My oldest and most time consuming
+              hobby.
             </p>
           </div>
           <!-- End .project-info -->
@@ -368,9 +387,34 @@
       </div>
     </div>
   </div>
+  <!-- End #hobbies -->
+
+  <div id="skills" class="background">
+    <h2 class="heading">Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>CSS</li>
+      <li>AngularJs</li>
+      <li>React</li>
+      <li>node.js</li>
+      <li>Electron</li>
+      <li>Python</li>
+      <li>Ruby</li>
+      <li>Rails</li>
+      <li>MySQL</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>AWS</li>
+      <li>Docker</li>
+      <li>Lua</li>
+      <li>Matlab</li>
+      <li>Git</li>
+    </ul>
+  </div>
+  <!-- End #skills -->
 
   <div id="contact" class="background-alt">
-    <h2 class="heading" >Get in Touch</h2>
+    <h2 class="heading">Get in Touch</h2>
     <div id="contact-form">
       <input id="name" type="text" name="name" placeholder="Name" >
       <input id="email" type="email" name="email" placeholder="Email" >
