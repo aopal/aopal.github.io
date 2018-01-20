@@ -496,6 +496,18 @@ footer {
   h2 {
     color: $heading;
   }
+
+  // ul {
+  //   margin-left: -3.7%;
+  // }
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    margin-left: 1em;
+  }
 }
 
 #experience-timeline {
