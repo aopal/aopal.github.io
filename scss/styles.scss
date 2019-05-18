@@ -625,7 +625,7 @@ footer {
     color: $heading;
     margin-bottom: 50px;
   }
-  a {
+  .link {
     font-size: 22px;
     padding: 2.5%;
   }
@@ -686,7 +686,11 @@ footer {
   }
 
   a {
-    padding: 2.5%
+    padding: 2.5%;
+  }
+
+  .no-padding {
+    padding: 0;
   }
 }
 
