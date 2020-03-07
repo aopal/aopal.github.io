@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     mustermann (1.0.1)
-    rack (2.0.3)
+    rack (2.2.2)
     rack-protection (2.0.0)
       rack
     ruby_http_client (3.3.0)
@@ -17,6 +17,7 @@ GEM
     tilt (2.0.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
